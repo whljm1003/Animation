@@ -3,6 +3,7 @@ import Animate_Presence from "./Motion/Animate_Presence";
 import BaicAnimations from "./Motion/BasicAni";
 import Gestures from "./Motion/Gestures";
 import MotionValues from "./Motion/MotionValues";
+import Slider from "./Motion/Slider";
 import Variants from "./Motion/Variants";
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       {/* <Gestures /> */}
       {/* <MotionValues /> */}
       {/* <SVG /> */}
-      <Animate_Presence />
+      {/* <Animate_Presence /> */}
+      <Slider />
     </>
   );
 }
