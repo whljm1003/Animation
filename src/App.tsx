@@ -1,3 +1,4 @@
+import SVG from "./Motion/ SVG_Animation";
 import BaicAnimations from "./Motion/BasicAni";
 import Gestures from "./Motion/Gestures";
 import MotionValues from "./Motion/MotionValues";
@@ -9,7 +10,8 @@ function App() {
       {/* <BaicAnimations /> */}
       {/* <Variants />; */}
       {/* <Gestures /> */}
-      <MotionValues />
+      {/* <MotionValues /> */}
+      <SVG />
     </>
   );
 }
