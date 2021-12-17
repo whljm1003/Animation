@@ -1,7 +1,8 @@
 # React Masterclass_ANIMATIONS
 
-### Using:
+### Using
 
+- React
 - Typescript
 - Styled Components
 - framer-motion
