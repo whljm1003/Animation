@@ -25,6 +25,7 @@ const Box = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
 `;
 
@@ -44,6 +45,7 @@ const Btn = styled(motion.button)`
   font-weight: 600;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 `;
 
 const Circle = styled(motion.div)`
@@ -67,13 +69,13 @@ const boxVariants = {
 const btnVariants = {
   start: (clicked: boolean) => ({
     color: clicked ? "#2f72ff" : "#f4b182",
+    scale: clicked ? 1 : 1.3,
     opacity: 0,
-    scale: 0,
   }),
   end: (clicked: boolean) => ({
     color: clicked ? "#f4b182" : "#2f72ff",
+    scale: clicked ? 1.3 : 1,
     opacity: 1,
-    scale: 1,
     transiton: {
       duration: 0.3,
     },
@@ -111,7 +113,7 @@ function Challenge() {
           </Box>
         ))}
       </Grid>
-      <AnimatePresence custom={clicked}>
+      <AnimatePresence>
         {id ? (
           <Overlay
             onClick={() => setId(null)}
@@ -126,6 +128,8 @@ function Challenge() {
             />
           </Overlay>
         ) : null}
+      </AnimatePresence>
+      <AnimatePresence custom={clicked}>
         <Btn
           custom={clicked}
           variants={btnVariants}
