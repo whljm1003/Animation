@@ -1,4 +1,5 @@
 import SVG from "./Motion/ SVG_Animation";
+import Animate_Presence from "./Motion/Animate_Presence";
 import BaicAnimations from "./Motion/BasicAni";
 import Gestures from "./Motion/Gestures";
 import MotionValues from "./Motion/MotionValues";
@@ -11,7 +12,8 @@ function App() {
       {/* <Variants />; */}
       {/* <Gestures /> */}
       {/* <MotionValues /> */}
-      <SVG />
+      {/* <SVG /> */}
+      <Animate_Presence />
     </>
   );
 }
