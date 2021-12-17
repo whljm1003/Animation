@@ -111,7 +111,7 @@ function Challenge() {
           </Box>
         ))}
       </Grid>
-      <AnimatePresence>
+      <AnimatePresence custom={clicked}>
         {id ? (
           <Overlay
             onClick={() => setId(null)}
